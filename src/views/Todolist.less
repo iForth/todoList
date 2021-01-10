@@ -1,0 +1,87 @@
+.wrapper {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newTodo {
+  margin-left: 50px;
+
+  @media screen and (max-width: 700px) {
+    margin-left: 20px;
+  }
+}
+
+.queryBar {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 700px) {
+    max-width: 300px;
+  }
+}
+
+.list {
+  width: 600px;
+
+  @media screen and (max-width: 700px) {
+    width: 300px;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.noData {
+  margin-top: 3rem;
+}
+
+.item {
+  display: flex;
+  min-height: 3rem;
+  line-height: 3rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  align-items: center;
+
+  .content {
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    @media screen and (max-width: 700px) {
+      width: 150px;
+      font-size: 1rem;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  & + .icon {
+    margin-left: 1rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 1.2rem;
+  }
+}
